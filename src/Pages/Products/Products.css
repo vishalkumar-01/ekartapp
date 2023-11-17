@@ -1,0 +1,248 @@
+.productlist-main-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    min-width: 15rem;
+    align-self: center;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.pagination_container {
+    margin-bottom: 5rem;
+}
+
+.card-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.productlist-card-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: top center;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.productlist-card-img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1.05);
+}
+
+.product_card_title {
+    text-align: start;
+    letter-spacing: 1.05px;
+    font-size: 0.9rem;
+    padding: 0.25rem;
+}
+
+.product_card_attr {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem;
+}
+
+.product_card_price {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.original_price {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.wishlist_btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    /* color: black; */
+    right: 15px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+.wishlisted_btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    color: red;
+    right: 15px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+.products__page__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.products__right__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__right__container p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #FF3E6C;
+    padding: 1rem;
+    margin: 0;
+
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin: 4px auto;
+    padding: 0.25rem 0rem;
+    border-radius: 0.25rem;
+    width: 98%;
+    background-color: #FF3E6C;
+    cursor: pointer;
+}
+
+.add_to_cart_btn {
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+    margin: 2px auto;
+    border-radius: 0.25rem;
+    width: 98%;
+    background-color: #FF3E6C;
+    cursor: pointer;
+}
+
+.go_to_cart_btn {
+    display: flex;
+    color: #FFF;
+    justify-content: center;
+    margin: 2px auto;
+    border-radius: 0.25rem;
+    width: 98%;
+    background-color: black;
+    cursor: pointer;
+}
+
+.add_to_cart {
+    color: #FFF;
+}
+
+.add_to_cart_btn:hover {
+    background-color: #ce2950;
+}
+
+.go_to_cart_btn:hover {
+    background-color: rgb(70, 69, 69)
+}
+
+.btn_content {
+    margin-left: 4px;
+}
+
+.go_to_cart_btn a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 600;
+    padding: 0.35rem 0rem;
+    margin-left: 4px;
+    font-size: 14px;
+}
+
+.btns a:hover {
+    font-weight: 600;
+    margin-left: 4px;
+
+}
+
+.cart-icon,
+.wishlist-icon {
+    color: #FFF;
+}
+
+.productlist-footer-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    padding: 0.35rem;
+    color: var(--primary-color);
+    z-index: 11;
+
+}
+
+.product-list-drawar-active {
+    transform: translateY(0);
+}
+
+
+
+.up_arrow {
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 70%;
+    }
+
+    .productlist-footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF;
+    }
+
+    .filters {
+        font-size: 1.375rem;
+        font-weight: 700;
+        margin: 0.15rem;
+    }
+
+    .main_filters {
+        display: none;
+    }
+
+    .product-list-drawar {
+        position: fixed;
+        top: 8.45rem;
+        left: 0;
+        width: 100vw;
+        /* padding-bottom: 5rem; */
+        overflow-y: scroll;
+        border-top: 1px solid #000;
+        height: calc(100vh - 7rem);
+        background-color: #FFF;
+        z-index: 9999;
+    }
+}

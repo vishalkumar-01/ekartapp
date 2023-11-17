@@ -1,0 +1,126 @@
+.user_profile_container {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+.user_profile_data {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    width: 50%;
+    text-align: start;
+}
+
+.user_profile_container_options {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF;
+    padding: 1rem 2rem;
+    width: 50%;
+    border-bottom: 1px solid gray;
+
+}
+
+.option_btn {
+    background-color: #FFF;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    letter-spacing: 1.15px;
+    cursor: pointer;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.option_btn:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.logout_btn {
+    padding: 0.35rem 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #F8D7DA;
+    color: #842029;
+    cursor: pointer;
+}
+
+.addresses_data {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    width: 50%;
+    text-align: start;
+}
+
+.profile_address_card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.profile_address_card p {
+    margin: 0;
+}
+
+.address_card_btns {
+    display: flex;
+    gap: 1rem;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px rgb(20, 19, 19) solid;
+    opacity: 0.25;
+}
+
+.form_input {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    align-items: center;
+}
+
+.order_history_container {
+    width: 50%;
+    padding: 1rem 2rem;
+    background-color: #FFF;
+}
+
+.order_history_order {
+    display: flex;
+    text-align: start;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    border-bottom: 1px solid gray;
+}
+
+.order_history_address p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .user_profile_data {
+        width: 80%;
+    }
+
+    .user_profile_container_options {
+        width: 80%;
+    }
+
+    .addresses_data {
+        width: 80%;
+    }
+
+    .order_history_container {
+        width: 80%;
+    }
+
+
+}

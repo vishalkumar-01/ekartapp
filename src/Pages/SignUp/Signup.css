@@ -1,0 +1,97 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.signup-form-container {
+    width: 600px;
+    padding: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+
+
+.signup-form-container h1 {
+    margin: 1rem 0;
+}
+
+.signup-form label {
+    display: block;
+    text-align: start;
+    font-weight: bold;
+}
+
+.signUp__form__field {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 0.25rem
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.signup-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+.password__field {
+    position: relative;
+    width: 100%;
+}
+
+.password__icon {
+    cursor: pointer;
+    font-size: 18px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.login_link {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .signup-form-container {
+        width: 75%;
+    }
+
+    .password__icon {
+        cursor: pointer;
+        font-size: 18px;
+        position: absolute;
+        right: 0px;
+        top: 8px;
+    }
+
+}

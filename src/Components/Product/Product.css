@@ -1,0 +1,39 @@
+.star_icon {
+    color: #FF3E6C;
+}
+
+.ratings_reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+
+    left: 10px;
+    position: absolute;
+    bottom: 100px;
+    cursor: pointer;
+}
+
+.rating {
+    font-size: 0.85rem;
+    margin-right: 2px;
+}
+
+.reviews {
+    font-size: 0.85rem;
+    margin-right: 2px;
+}
+
+.devider {
+    margin: 0px 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .ratings_reviews {
+        position: absolute;
+        bottom: 80px;
+    }
+}

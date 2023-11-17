@@ -1,0 +1,14 @@
+.wishlist_main_Container {
+    min-height: 95vh;
+}
+
+.empty_wishlist {
+    width: 35%;
+}
+
+.wishlist_warn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
